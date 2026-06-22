@@ -1,4 +1,4 @@
-const API ="http://localhost:5000/api/notes";
+const API ="http://localhost:3000/app/student/note";
 
 async function loadNotes(){
 
@@ -6,7 +6,9 @@ async function loadNotes(){
 
     const notes = await res.json();
 
+console.log(notes);
     const container =document.getElementById("notes");
+    
 
     container.innerHTML = "";
 

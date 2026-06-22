@@ -5,7 +5,7 @@ const User = require("../models/note.models")
 
 router.get("/note", async (req,res)=>{
     const user= await User.find();
-    res.status(200).json({message:user});
+    res.status(200).json(user);
 });
 
 
